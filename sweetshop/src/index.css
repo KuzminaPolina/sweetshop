@@ -1,1 +1,22 @@
 @import "tailwindcss";
+@import 'swiper/css';
+@import 'swiper/css/navigation';
+@import 'swiper/css/pagination';
+
+.swiper {
+  --swiper-navigation-color: #000000bb;
+  --swiper-navigation-size: 14px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  background: transparent;
+  width: 20px;
+  height: 20px;
+  top: var(--swiper-navigation-top-offset, 44%) !important;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 14px;
+}
