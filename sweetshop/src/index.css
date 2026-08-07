@@ -3,6 +3,93 @@
 @import 'swiper/css/navigation';
 @import 'swiper/css/pagination';
 
+@theme {
+  --font-montserrat: "Montserrat", sans-serif;
+  --font-proxima-nova: "Proxima Nova", sans-serif;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  src: url("./fonts/Montserrat-Light.woff") format("woff"),
+    url("./fonts/montserrat-v25-cyrillic-300.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/Montserrat-Regular.woff") format("woff"),
+    url("./fonts/montserrat-v25-cyrillic-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  src: url("./fonts/Montserrat-Medium.woff") format("woff"),
+    url("./fonts/montserrat-v25-cyrillic-500.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  src: url("./fonts/Montserrat-SemiBold.woff") format("woff"),
+    url("./fonts/montserrat-v25-cyrillic-600.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./fonts/Montserrat-Bold.woff") format("woff"),
+    url("./fonts/montserrat-v25-cyrillic-700.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  src: url("./fonts/Montserrat-ExtraBold.woff") format("woff"),
+    url("./fonts/montserrat-v25-cyrillic-800.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 800;
+  src: url("./fonts/Proxima-Nova-Regular.woff") format("woff"),
+    url("./fonts/Proxima-Nova-Regular.woff2") format("woff2");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 18px;
+}
+
+@media (min-width: 768px) {
+  .header-bg {
+    background-image: url("./assets/color-blob-bg.webp");
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+}
+
+
+
 .swiper {
   --swiper-navigation-color: #000000bb;
   --swiper-navigation-size: 14px;
@@ -19,4 +106,30 @@
 .swiper-button-next::after,
 .swiper-button-prev::after {
   font-size: 14px;
+}
+
+.since {
+  position: relative;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+.since::before {
+  content: "";
+  position: absolute;
+  width: 29px;
+  height: 2px;
+  background-color: #000000;
+  top: 13px;
+  left: 0;
+}
+
+.since::after {
+  content: "";
+  position: absolute;
+  width: 29px;
+  height: 2px;
+  background-color: #000000;
+  top: 13px;
+  right: 0;
 }
