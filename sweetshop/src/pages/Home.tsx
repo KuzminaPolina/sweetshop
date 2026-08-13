@@ -2,6 +2,7 @@ import { useMediaQuery } from "../hooks/useMediaQuery";
 import { Link } from "react-router-dom";
 import TopBanner from "../components/SwiperBanner";
 import Hero from "../components/MainHero";
+import Offers from "../components/Offers";
 
 function Home() {
   const isTabletUp = useMediaQuery("(min-width: 768px)");
@@ -18,6 +19,7 @@ function Home() {
       </header>
       <main>
         <Hero />
+        <Offers />
       </main>
     </>
   );

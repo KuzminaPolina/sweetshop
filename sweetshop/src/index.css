@@ -88,8 +88,6 @@ body {
   }
 }
 
-
-
 .swiper {
   --swiper-navigation-color: #000000bb;
   --swiper-navigation-size: 14px;
@@ -132,4 +130,11 @@ body {
   background-color: #000000;
   top: 13px;
   right: 0;
+}
+
+.hero-bg {
+  background-image: url("./assets/hero-blob-bg-webp.webp");
+  background-repeat: no-repeat;
+  background-position: center left;
+  background-size: cover;
 }
