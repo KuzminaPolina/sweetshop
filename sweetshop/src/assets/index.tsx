@@ -11,6 +11,7 @@ import offer04 from "./offer04.svg";
 import offer05 from "./offer05.svg";
 import offer06 from "./offer06.svg";
 import arrow from "./arrow.svg";
+import mainLogo from "./menu-logo.svg";
 
 export {
   truck,
@@ -26,4 +27,5 @@ export {
   offer05,
   offer06,
   arrow,
+  mainLogo,
 };
